@@ -16,6 +16,7 @@
 		5E444D441E9E57A400930DD5 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E444D431E9E57A400930DD5 /* ParallaxCell.swift */; };
 		5E444D471E9E57CA00930DD5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E444D461E9E57CA00930DD5 /* UIView+Extension.swift */; };
 		5E444D491E9E581E00930DD5 /* ScrollObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E444D481E9E581E00930DD5 /* ScrollObserver.swift */; };
+		5E444D4B1E9E60F300930DD5 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E444D4A1E9E60F300930DD5 /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5E444D431E9E57A400930DD5 /* ParallaxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParallaxCell.swift; path = Cells/ParallaxCell.swift; sourceTree = "<group>"; };
 		5E444D461E9E57CA00930DD5 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
 		5E444D481E9E581E00930DD5 /* ScrollObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollObserver.swift; sourceTree = "<group>"; };
+		5E444D4A1E9E60F300930DD5 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = Cells/BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				5E444D431E9E57A400930DD5 /* ParallaxCell.swift */,
+				5E444D4A1E9E60F300930DD5 /* BaseTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				5E444D2F1E9E54B600930DD5 /* ViewController.swift in Sources */,
 				5E444D471E9E57CA00930DD5 /* UIView+Extension.swift in Sources */,
 				5E444D2D1E9E54B600930DD5 /* AppDelegate.swift in Sources */,
+				5E444D4B1E9E60F300930DD5 /* BaseTableViewCell.swift in Sources */,
 				5E444D491E9E581E00930DD5 /* ScrollObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

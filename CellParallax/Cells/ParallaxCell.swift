@@ -8,34 +8,23 @@
 
 import UIKit
 
-class ParallaxCell: UITableViewCell {
+class ParallaxCell: BaseTableViewCell {
     
     private var observer: ScrollObserver?
     
     private let cellImageView = UIImageView(frame: .zero)
     private var topConstraint: NSLayoutConstraint?
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        self.setupView()
-        self.setupConstraints()
-    }
-    
-    private func setupView() {
+    override func baseSetup() {
         self.clipsToBounds = true
         
         self.contentView.addSubview(self.cellImageView)
     }
     
-    private func setupConstraints() {
+    override func setupConstraints() {
         self.topConstraint = cellImageView.autoPinEdge(toSuperviewEdge: .top)
         self.cellImageView.autoPinEdge(toSuperviewEdge: .left)
         self.cellImageView.autoPinEdge(toSuperviewEdge: .right)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     override func layoutSubviews() {
@@ -70,7 +59,6 @@ class ParallaxCell: UITableViewCell {
             self.observer = nil
         }
     }
-    
     
     func updateImage(image: UIImage) {
         self.cellImageView.image = image
